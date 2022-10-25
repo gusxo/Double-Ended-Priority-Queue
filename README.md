@@ -2,9 +2,9 @@
 C# Implements of Priority-Queue and Double-Ended-Priority-Queue.
 
 ### namespace : PriorityQueue
-PriorityQueue.PriorityQueue<T>
-PriorityQueue.DEPriorityQueue<T>
-PriorityQueue.Priority
+PriorityQueue.PriorityQueue<T>  
+PriorityQueue.DEPriorityQueue<T>  
+PriorityQueue.Priority  
 
 ### PriorityQueue\<T> Class  
 Implements of Priority-Queue.  
