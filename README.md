@@ -1,5 +1,10 @@
-# Priority-Queue
+# Double-Ended-Priority-Queue
 C# Implements of Priority-Queue and Double-Ended-Priority-Queue.
+
+### namespace : PriorityQueue
+PriorityQueue.PriorityQueue<T>
+PriorityQueue.DEPriorityQueue<T>
+PriorityQueue.Priority
 
 ### PriorityQueue\<T> Class  
 Implements of Priority-Queue.  
@@ -22,10 +27,21 @@ In the example below, the higher the value, the higher the priority.
 PriorityQueue.PriorityQueue<int> pq = new PriorityQueue.PriorityQueue<int>( (a,b) => {return a < b;} );
 pq.Enqueue(2);
 pq.Dequeue();
+                                                                                                    
+PriorityQueue.DEPriorityQueue<int> depq = new PriorityQueue.DEPriorityQueue<int>( (a,b) => {return a < b;} );
+depq.Enqueue(2);
+depq.Enqueue(3);
+depq.Dequeue(PriorityQueue.Priority.Highest);
+                                                                                                          
 ```
 In the example below, the higher the value, the lower the priority.  
 ```
 PriorityQueue.PriorityQueue<int> pq = new PriorityQueue.PriorityQueue<int>( (a,b) => {return a > b;} );
 pq.Enqueue(2);
 pq.Dequeue();
+  
+PriorityQueue.DEPriorityQueue<int> depq = new PriorityQueue.DEPriorityQueue<int>( (a,b) => {return a > b;} );
+depq.Enqueue(2);
+depq.Enqueue(3);
+depq.Dequeue(PriorityQueue.Priority.Lowest);
 ```
